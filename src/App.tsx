@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="kart">
-      <h1>Galeri</h1>
+      <h1>Galeri 2</h1>
       <div className="sol">
         <button onClick={goToPrevious}>Önceki</button>
       </div>
