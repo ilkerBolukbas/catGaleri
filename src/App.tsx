@@ -25,7 +25,8 @@ function App() {
 
   return (
     <div className="kart">
-      <h1>Galeri 2</h1>
+      <h1>Galeri 1</h1>
+      <div className="icerik">
       <div className="sol">
         <button onClick={goToPrevious}>Önceki</button>
       </div>
@@ -35,6 +36,7 @@ function App() {
         alt={`carousel-${currentIndex}`}
       />
       <button onClick={goToNext}>Sonraki</button>
+      </div>
     </div>
   );
 }
