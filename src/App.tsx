@@ -1,14 +1,15 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 
-const images = [
-  "../images/cat1.jpg",
-  "../images/cat2.jpg",
-  "../images/cat3.jpg",
+// Görsellerin yolunu "public/images" içinden ver
+const images: string[] = [
+  "/images/cat1.jpg",
+  "/images/cat2.jpg",
+  "/images/cat3.jpg",
 ];
 
 function App() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -23,9 +24,8 @@ function App() {
   };
 
   return (
-    <div >
+    <div className="kart">
       <h1>Galeri</h1>
-      <div className="icerik">
       <div className="sol">
         <button onClick={goToPrevious}>Önceki</button>
       </div>
@@ -35,7 +35,6 @@ function App() {
         alt={`carousel-${currentIndex}`}
       />
       <button onClick={goToNext}>Sonraki</button>
-      </div>
     </div>
   );
 }
