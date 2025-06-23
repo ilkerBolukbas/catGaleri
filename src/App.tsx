@@ -3,9 +3,9 @@ import { useState } from "react";
 
 // Görsellerin yolunu "public/images" içinden ver
 const images: string[] = [
-  "/images/cat1.jpg",
-  "/images/cat2.jpg",
-  "/images/cat3.jpg",
+  "images/cat1.jpg",
+  "images/cat2.jpg",
+  "images/cat3.jpg",
 ];
 
 function App() {
