@@ -3,9 +3,9 @@ import { useState } from "react";
 
 // Görsellerin yolunu "public/images" içinden ver
 const images: string[] = [
-  "../images/cat1.jpg",
-  "../images/cat2.jpg",
-  "../images/cat3.jpg",
+  "/images/cat1.jpg",
+  "/images/cat2.jpg",
+  "/images/cat3.jpg",
 ];
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="kart">
-      <h1>Galeri 1</h1>
+      <h1>Galeri 2</h1>
       <div className="sol">
         <button onClick={goToPrevious}>Önceki</button>
       </div>
